@@ -1,0 +1,17 @@
+﻿<Window x:Class="ChattingClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing">
+    <Grid>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="234.667,10,0,0" VerticalAlignment="Top" Width="75" Click="LoginButton_Click" BorderBrush="#FF1243E8" Background="{x:Null}" IsDefault="True"/>
+        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,8.96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219.667"/>
+        <TextBox x:Name="TextDisplayTextBox" HorizontalAlignment="Left" Height="201" Margin="10,64.334,0,0" VerticalAlignment="Top" Width="362" TextChanged="TextBox_TextChanged" Background="#FFF7F5EF">
+        </TextBox>
+        <Button x:Name="SendButton" Content="Send" HorizontalAlignment="Left" Margin="297,284.207,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Click="SendButton_Click" BorderBrush="#FF1243E8"/>
+        <TextBox x:Name="MessageTextBox" HorizontalAlignment="Left" Height="23" Margin="10,282.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
+        <Label Content="Pop'App" HorizontalAlignment="Left" Margin="320.414,5.998,0,0" VerticalAlignment="Top" Width="151.25" Foreground="Red" Background="#00000000" Height="37.334" FontSize="14" FontWeight="Bold" FontFamily="Avenir book"/>
+        <ListBox x:Name="UsersListBox" HorizontalAlignment="Right" Margin="0,64.334,10,14.833" Width="113" BorderBrush="#FF37D808"/>
+        <Label x:Name="OnlineClientsLabel" Content="Online now" HorizontalAlignment="Right" Margin="0,33.374,37.006,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
